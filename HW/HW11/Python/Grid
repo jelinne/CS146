@@ -1,0 +1,12 @@
+def grid(image):
+    print("[", end="")
+    for row in range(len(image)):
+        print("[", end="")
+        for col in range(len(image[row])):
+            print(image[row][col], end="")
+            if col != len(image[row]) - 1:
+                print(", ", end="")
+        print("]", end="")
+        if row != len(image) - 1:
+            print(",")
+    print("]\n")
