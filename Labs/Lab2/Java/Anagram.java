@@ -9,6 +9,9 @@ public class Anagram {
 		}
 		char[] sc = s.toCharArray();
 		char[] tc = t.toCharArray();
+		if(Arrays.equals(sc,tc)) {
+			return false;
+		}
 		Arrays.sort(sc);
 		Arrays.sort(tc);
 		return Arrays.equals(sc,tc);
